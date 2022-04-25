@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency converter</title>
+</head>
+<body>
+    <div class="content">
+        <div class="iconRow">
+            <img class="icon" src="icons/dollar-sign-solid.svg">
+            <img class="icon" src="icons/coins-solid.svg">
+            <img class="icon" src="icons/euro-sign-solid.svg">
+        </div>
+        <div class="selectRow">
+            <select class="selectContainer" id="base">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="PLN">PLN</option>
+                <option value="GBP">GBP</option>
+            </select>
+
+            <select class="selectContainer" id="expected">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="PLN">PLN</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+
+        <input type="number" class="qinput" id="quantity" value="1">
+        
+        <button type="button" id="letsgo">Calculate</button>
+        
+        <div class="output" id="output"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px grey;
+    padding: 1em 0;
+}
+
+.iconRow {
+    display: flex;
+    justify-content: space-around;
+    height: 32px;
+    width: 50px;
+}
+
+.selectRow {
+    display: flex;
+    gap: 1em;
+}
+
+.selectContainer {
+    padding: 1em;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.selectContainer:focus {
+    outline: none;
+}
+
+.qinput {
+    padding: 10px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: right;
+    appearance: none;
+    
+}
+
+.qinput:focus {
+    outline: none;
+}
+
+.output {
+    font-family: sans-serif;
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
