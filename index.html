@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Currency converter</title>
+    <title>CurrencySwap</title>
 </head>
 <body>
+    <h1>CurrencySwap</h1>
     <div class="content">
         <div class="iconRow">
             <img class="icon" src="icons/dollar-sign-solid.svg">
@@ -14,23 +16,15 @@
         </div>
         <div class="selectRow">
             <select class="selectContainer" id="base">
-                <option value="EUR">EUR</option>
-                <option value="USD">USD</option>
-                <option value="PLN">PLN</option>
-                <option value="GBP">GBP</option>
             </select>
 
             <select class="selectContainer" id="expected">
-                <option value="EUR">EUR</option>
-                <option value="USD">USD</option>
-                <option value="PLN">PLN</option>
-                <option value="GBP">GBP</option>
             </select>
         </div>
 
         <input type="number" class="qinput" id="quantity" value="1">
         
-        <button type="button" id="letsgo">Calculate</button>
+        <button type="button" class="button" id="letsgo">Convert</button>
         
         <div class="output" id="output"></div>
 

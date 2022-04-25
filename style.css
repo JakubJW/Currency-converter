@@ -1,20 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+html {
+    background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    color: white;
+    margin: 50px;
+    padding: 0;
+    letter-spacing: 2px;
 }
 
 .content {
     display: flex;
-    margin-top: 100px;
     flex-direction: column;
     gap: 1em;
     justify-content: center;
     align-items: center;
     width: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px grey;
-    padding: 1em 0;
+    border-radius: 16px;
+    padding: 40px 0;
+    background: rgb(39, 38, 44);
 }
 
 .iconRow {
@@ -24,45 +42,112 @@ body {
     width: 50px;
 }
 
+svg {
+    color: #b8add2;
+}
+
 .selectRow {
     display: flex;
-    gap: 1em;
+    justify-content: space-between;
+    width: 220px;
+    height: 50px;
 }
 
 .selectContainer {
-    padding: 1em;
+    font-family: "Kanit", sans-serif;
+    padding: 1em .5em;
+    padding-right: 0;
     width: 100px;
-    text-align: center;
     cursor: pointer;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: none;
+    background: rgb(55, 47, 71);
+    color: white;
+    border-radius: 16px;
 }
 
 .selectContainer:focus {
     outline: none;
 }
 
-.qinput {
-    padding: 10px;
-    width: 200px;
-    font-size: 20px;
-    border: 1px solid black;
+.selectContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.selectContainer::-webkit-scrollbar-thumb {
+    background: rgb(184, 173, 210);
+    border-radius: 8px;
+}
+
+.selectContainer::-webkit-scrollbar-track {
+    box-shadow: rgb(55 47 71) 0px 0px 5px inset;
     border-radius: 10px;
+}
+
+option {
+    background: rgb(39, 38, 44);
+}
+
+.qinput {
+    font-family: "Kanit", sans-serif;
+    padding: 10px;
+    padding-right: 1em;
+    width: 190px;
+    font-size: 20px;
+    border: none;
+    border-radius: 16px;
     text-align: right;
     appearance: none;
-    
+    background: rgb(55, 47, 71);
+    color: rgb(184, 173, 210);
 }
 
 .qinput:focus {
     outline: none;
 }
 
-.output {
-    font-family: sans-serif;
-    border: 1px solid black;
-    width: 200px;
-    height: 20px;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
+.qinput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    width: 200px;
+    height: 30px;
+    border-radius: 16px;
+    text-align: center;
+    background: rgb(55, 47, 71);
+    padding: 10px;
+    color: rgb(184, 173, 210);
+    transition: all .2s ease-in-out;
+}
+
+.outputAnimation {
+    transform: translateX();
+    -webkit-transform: rotateX(90deg);
+    color: transparent;
+}
+
+.button {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.buttonAnimation {
+    transform: scale();
+    -webkit-transform: scale(0.95);
+}
+
