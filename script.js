@@ -3,6 +3,8 @@ const expectedSelect = document.getElementById("expected");
 const calculateBtn = document.getElementById("letsgo");
 const quantityInput = document.getElementById("quantity");
 const output = document.getElementById("output");
+const header = document.getElementById("header");
+const content = document.getElementById("content");
 
 //funkcja zwracająca wartość wybranej w select waluty
 
@@ -92,8 +94,17 @@ document.addEventListener("DOMContentLoaded", async function(){
 
     currencyBase = setData(currencyBase, baseSelect.firstElementChild.value);
     currencyExpected = setData(currencyBase, expectedSelect.firstElementChild.value);
+    revealSite();
 });
 
 const calculate = function(input, val1, val2){
     return input * val1*(1/val2);
+}
+
+const revealSite = function(){
+    setTimeout(function(){
+        header.style.opacity = "1";
+        content.style.opacity = "1";
+        content.style.top = "0";
+    },500)
 }
