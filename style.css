@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 html {
     background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -13,26 +14,33 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 h1 {
+    position: relative;
     font-family: "Kanit", sans-serif;
     color: white;
     margin: 50px;
     padding: 0;
     letter-spacing: 2px;
+    transition: all .5s ease;
+    opacity: 0;
 }
 
 .content {
+    position: relative;
+    top: 20px;
     display: flex;
     flex-direction: column;
     gap: 1em;
     justify-content: center;
     align-items: center;
-    width: 300px;
     border-radius: 16px;
-    padding: 40px 0;
+    padding: 40px 40px;
     background: rgb(39, 38, 44);
+    transition: all .5s ease;
+    opacity: 0;
 }
 
 .iconRow {
@@ -42,22 +50,19 @@ h1 {
     width: 50px;
 }
 
-svg {
-    color: #b8add2;
-}
-
 .selectRow {
     display: flex;
     justify-content: space-between;
-    width: 220px;
+    width: 240px;
     height: 50px;
 }
 
 .selectContainer {
     font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
     padding: 1em .5em;
     padding-right: 0;
-    width: 100px;
+    width: 110px;
     cursor: pointer;
     border: none;
     background: rgb(55, 47, 71);
@@ -85,13 +90,14 @@ svg {
 
 option {
     background: rgb(39, 38, 44);
+    text-transform: uppercase;
 }
 
 .qinput {
     font-family: "Kanit", sans-serif;
     padding: 10px;
     padding-right: 1em;
-    width: 190px;
+    width: 210px;
     font-size: 20px;
     border: none;
     border-radius: 16px;
@@ -114,7 +120,7 @@ option {
     flex-direction: column;
     justify-content: center;
     font-family: "Kanit", sans-serif;
-    width: 200px;
+    width: 220px;
     height: 30px;
     border-radius: 16px;
     text-align: center;
@@ -133,7 +139,7 @@ option {
 .button {
     text-align: center;
     font-family: "Kanit", sans-serif;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 16px;
     border: none;
     cursor: pointer;
